@@ -1,1 +1,1 @@
-An Age Calculator built with HTML, CSS and JavaScript. 
+Progressive projects I build while learning JavaScript. 
