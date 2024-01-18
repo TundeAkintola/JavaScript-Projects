@@ -1,0 +1,157 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    background-color: #f2f2f2;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    height: 100vh;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+.container {
+
+    background-color: white;
+
+    justify-content: center;
+
+    align-items: center;
+
+    max-width: 600px;
+
+    box-shadow: 0 0 10px rgb(0, 0, .2);
+
+    border-radius: 10px;
+
+}
+
+
+
+.form {
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: 1px solid #ccc;
+
+    padding: 50px;
+
+}
+
+
+
+h1 {
+
+    text-align: center;
+
+}
+
+
+
+input {
+
+    width: 100%;
+
+    margin: 10px 0px;
+
+    padding: 10px;
+
+    border-radius: 4px #ccc;
+
+    cursor: pointer;
+
+}
+
+
+
+input:hover {
+
+    background-color: #ccc;
+
+    border: none;
+
+}
+
+
+
+#calculate {
+
+    background-color: #4caf50;
+
+    color: #ffffff;
+
+    width: 100%;
+
+    border: none;
+
+    cursor: pointer;
+
+    padding: 10px;
+
+    text-transform: uppercase;
+
+    margin: 10px 0;
+
+    font-size: 18px;
+
+    transition: background-color .2s;
+
+}
+
+
+
+#calculate:hover {
+
+    background-color: #45a049;
+
+}
+
+
+
+#total {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+
+}
+
+
+
+#result {
+
+    font-size: 24px;
+
+}
+
+
+
+@media (max-width:768px; ) {
+
+    h1 {
+
+        font-size: 12px;
+
+    }
+
+} 
