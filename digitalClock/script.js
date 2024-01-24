@@ -16,7 +16,7 @@ function updateClock() {
 
     let s = new Date().getSeconds()
 
-    let ampm = "PM"
+    let ampm = "AM"
 
 
 
@@ -24,7 +24,7 @@ function updateClock() {
 
         h = h - 12
 
-        ampm = "AM"
+        ampm = "PM"
 
     }
 
@@ -42,7 +42,7 @@ function updateClock() {
 
     secondEl.innerText = s;
 
-    ampmEl, (innerText = ampm);
+    ampmEl.innerText = ampm;
 
     setTimeout(() => {
 
