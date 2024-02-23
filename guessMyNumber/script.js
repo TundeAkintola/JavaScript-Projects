@@ -2,7 +2,7 @@
 
 const check = document.querySelector('.check');
 const again = document.querySelector('.again');
-const secretNumber = Math.floor(Math.random() * 10) + 1;
+let secretNumber = Math.floor(Math.random() * 10) + 1;
 
 // console.log((document.querySelector('.number').textContent = secretNumber));
 
@@ -30,7 +30,9 @@ function guessChecker() {
   else if (guess === secretNumber) {
     document.querySelector('.message').textContent = '🎉 Correct Number!';
     score++;
-    document.querySelector('.score').textContent = score;
+
+  document.querySelector('.number').textContent = secretNumber;
+ document.querySelector('.score').textContent = score;
     document.querySelector('.screen').style.backgroundColor = '#108010';
     // after 20 points the highscore increases by 1
     if (guess > highscore) {
@@ -60,11 +62,15 @@ function guessChecker() {
 }
 
 function reset() {
+
+secretNumber = Math.floor(Math.random() * 10) + 1;
+
+document.querySelector('.number').textContent = '?';
   document.querySelector('.screen').style.backgroundColor = '#03e708';
-  document.querySelector('.number').textContent = '?';
+ 
   document.querySelector('.guess').value = '';
   document.querySelector('.message').textContent = 'Start guessing....';
-  document.querySelector('.score').textContent = '10';
+  document.querySelector('.score').textContent = score;
   document.querySelector('.highscore').textContent = '0';
 }
 
