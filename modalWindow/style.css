@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+body {
+  background: linear-gradient(to right, rgb(209, 118, 14), rgb(146, 216, 146));
+  position: relative;
+  height: 100vh;
+  color: #333;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.button-list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  background-color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  border-radius: 15px;
+  box-shadow: 4px 1px 3px grey;
+  border: none;
+  margin: 0 12px;
+}
+.hidden {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+p {
+  background-color: white;
+  padding: 0 0.8rem;
+  text-align: justify;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: rgb(9, 90, 20);
+}
+.hidden {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  p {
+    background-color: white;
+    padding: 1rem;
+    text-align: justify;
+  }
+  .button-list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .btn {
+    background-color: white;
+    padding: 10px;
+    font-size: 12pt;
+    margin-top: 12px;
+    font-weight: 60;
+    border-radius: 15px;
+    box-shadow: 4px 1px 3px grey;
+    border: none;
+    margin: 5px 12px;
+  }
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 0.2rem;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.6rem;
+    font-size: 1rem;
+    color: rgb(9, 90, 20);
+  }
+}
