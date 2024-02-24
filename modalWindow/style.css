@@ -30,6 +30,13 @@ body {
   border: none;
   margin: 0 12px;
 }
+
+.btn:hover{
+  cursor: pointer;
+  background-color:orange;
+  color: white;
+}
+
 .hidden {
   display: none;
 }
